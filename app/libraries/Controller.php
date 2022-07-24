@@ -4,7 +4,7 @@
  * Base Controller
  */
 class Controller {
-    public function module($model) {
+    public function model($model) {
         require_once '../app/models/' . $model . '.php';
         return new $model();
     }
