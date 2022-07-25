@@ -3,5 +3,4 @@
         <h1 class="display-6"><?= $data['title']; ?></h1>
         <p class="lead"><?= $data['description']; ?></p>
     </div>
-
 <?php require APPROOT . '/views/inc/footer.php'; ?>
