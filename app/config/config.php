@@ -7,3 +7,4 @@ define('DB_NAME', 'mvc');
 define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT', 'http://app.local');
 define('SITENAME', 'MVC App');
+define('APPVERSION', '1.0.0');
