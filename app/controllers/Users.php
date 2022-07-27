@@ -25,4 +25,20 @@ class Users extends Controller {
         }
     }
 
+    public function login() {
+        // Check for POST
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        } else {
+            $data = [
+                'email' => '',
+                'password' => '',
+                'email_error' => '',
+                'password_error' => '',
+            ];
+
+            $this->view('users/login', $data);
+        }
+    }
+
 }
