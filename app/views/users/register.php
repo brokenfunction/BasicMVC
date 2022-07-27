@@ -19,13 +19,13 @@
                     </div>
                     <div class="form-group mb-2">
                         <label for="password">Password: <sup>*</sup></label>
-                        <input type="password" name="password" class="form-control form-control-lg <?= (!empty($data['password_error'])) ? 'is-invalid' : ''; ?>"
+                        <input type="password" name="password" id="password" class="form-control form-control-lg <?= (!empty($data['password_error'])) ? 'is-invalid' : ''; ?>"
                                value="<?= $data['password']; ?>">
                         <span class="invalid-feedback"><?= $data['password_error']; ?></span>
                     </div>
                     <div class="form-group">
                         <label for="confirm_password_error">Confirm Password: <sup>*</sup></label>
-                        <input type="password" name="confirm_password_error" class="form-control form-control-lg <?= (!empty($data['confirm_password_error'])) ? 'is-invalid' : ''; ?>"
+                        <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-lg <?= (!empty($data['confirm_password_error'])) ? 'is-invalid' : ''; ?>"
                                value="<?= $data['confirm_password']; ?>">
                         <span class="invalid-feedback"><?= $data['confirm_password_error']; ?></span>
                     </div>
