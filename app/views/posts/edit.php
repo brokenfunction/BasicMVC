@@ -1,9 +1,9 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
     <a href="<?= URLROOT . '/posts'; ?>" class="btn btn-light"><i class="fa fa-backward"></i> Back</a>
     <div class="card card-body bg-light mt-5">
-        <h2>Add Post</h2>
-        <p>Create a post with this form</p>
-        <form action="<?= URLROOT . '/posts/add'; ?>" method="post">
+        <h2>Edit Post</h2>
+        <p>Edit a post with this form</p>
+        <form action="<?= URLROOT . '/posts/edit/' . $data['id']; ?>" method="post">
             <div class="form-group mb-2">
                 <label for="title">Title: <sup>*</sup></label>
                 <input id="title" type="text" name="title" class="form-control form-control-lg <?= (!empty($data['title_error'])) ? 'is-invalid' : ''; ?>"
